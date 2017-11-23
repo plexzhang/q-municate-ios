@@ -28,7 +28,7 @@
 static const CGFloat kQMStatusCellMinHeight = 65.0f;
 
 typedef NS_ENUM(NSUInteger, QMUserInfoSection) {
-    
+    QMUserInfoSectionUserInfo,
     QMUserInfoSectionStatus,
     QMUserInfoSectionInfoPhone,
     QMUserInfoSectionInfoEmail,

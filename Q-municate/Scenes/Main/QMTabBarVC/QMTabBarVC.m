@@ -42,12 +42,21 @@ QMChatConnectionDelegate
     }
 }
 
+
 - (void)viewWillLayoutSubviews {
-    
+    [super viewWillLayoutSubviews];
+
+    //Iphone X
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone &&
+        (int)[[UIScreen mainScreen] nativeBounds].size.height == 2436) {
+        return;
+    }
+
     CGRect tabFrame = self.tabBar.frame; //self.TabBar is IBOutlet of your TabBar
     tabFrame.size.height = 45;
     tabFrame.origin.y = self.view.frame.size.height - 45;
     self.tabBar.frame = tabFrame;
+    
 }
 
 //MARK: - Notification

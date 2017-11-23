@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FCI-lM-7qj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FCI-lM-7qj">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -128,8 +128,8 @@ out here.</string>
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="312-xk-x9O" customClass="QMNewMessageViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="csN-5F-4uv"/>
-                        <viewControllerLayoutGuide type="bottom" id="naP-m6-BjI"/>
+                        <viewControllerLayoutGuide type="top" id="s5N-tR-mRt"/>
+                        <viewControllerLayoutGuide type="bottom" id="cca-yg-WnC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="D3L-Fa-dYZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -156,7 +156,7 @@ out here.</string>
                             <constraint firstAttribute="trailingMargin" secondItem="Kqz-t0-q4s" secondAttribute="trailing" constant="-20" id="JwE-A8-C52"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Kqz-t0-q4s" secondAttribute="bottom" id="YZW-sv-dBa"/>
                             <constraint firstItem="Kqz-t0-q4s" firstAttribute="leading" secondItem="D3L-Fa-dYZ" secondAttribute="leadingMargin" constant="-20" id="iIB-q9-gJY"/>
-                            <constraint firstItem="PV0-ej-tkc" firstAttribute="top" secondItem="csN-5F-4uv" secondAttribute="bottom" id="oaO-IX-iVo"/>
+                            <constraint firstItem="PV0-ej-tkc" firstAttribute="top" secondItem="s5N-tR-mRt" secondAttribute="bottom" id="oaO-IX-iVo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PV0-ej-tkc" secondAttribute="trailing" constant="-20" id="q2x-5p-Azk"/>
                         </constraints>
                     </view>
@@ -203,8 +203,8 @@ out here.</string>
             <objects>
                 <viewController restorationIdentifier="ViewControllerNoSelection" storyboardIdentifier="ViewControllerNoSelection" id="nI4-LA-Hfc" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IOW-IO-0mY"/>
-                        <viewControllerLayoutGuide type="bottom" id="wna-Fh-SKm"/>
+                        <viewControllerLayoutGuide type="top" id="sgO-kE-Vsh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wf5-i1-fqw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vHP-0k-RMj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -216,8 +216,8 @@ out here.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wna-Fh-SKm" firstAttribute="top" secondItem="A6t-bd-vnt" secondAttribute="bottom" id="IFJ-dC-oe9"/>
-                            <constraint firstItem="A6t-bd-vnt" firstAttribute="top" secondItem="IOW-IO-0mY" secondAttribute="bottom" id="NJr-zP-j8q"/>
+                            <constraint firstItem="Wf5-i1-fqw" firstAttribute="top" secondItem="A6t-bd-vnt" secondAttribute="bottom" id="IFJ-dC-oe9"/>
+                            <constraint firstItem="A6t-bd-vnt" firstAttribute="top" secondItem="sgO-kE-Vsh" secondAttribute="bottom" id="NJr-zP-j8q"/>
                             <constraint firstItem="A6t-bd-vnt" firstAttribute="leading" secondItem="vHP-0k-RMj" secondAttribute="leading" id="mcb-oJ-fDw"/>
                             <constraint firstAttribute="trailing" secondItem="A6t-bd-vnt" secondAttribute="trailing" id="zTf-8v-INz"/>
                         </constraints>
@@ -332,8 +332,8 @@ out here.</string>
             <objects>
                 <viewController storyboardIdentifier="QMChatVC" title="ChatVC" automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="tuk-08-fQq" customClass="QMChatVC" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sVY-fU-EIq"/>
-                        <viewControllerLayoutGuide type="bottom" id="SCw-m4-fka"/>
+                        <viewControllerLayoutGuide type="top" id="iF1-aE-ADo"/>
+                        <viewControllerLayoutGuide type="bottom" id="gaF-ne-QCV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dYl-Nc-bFj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>

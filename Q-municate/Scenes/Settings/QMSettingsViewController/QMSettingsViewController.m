@@ -295,23 +295,31 @@ NYTPhotosViewControllerDelegate
     }
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+        if (section == QMSettingsSectionStatus) {
     
-    if (section == QMSettingsSectionStatus) {
-        
-        QMTableSectionHeaderView *headerView = [[QMTableSectionHeaderView alloc]
-                                                initWithFrame:CGRectMake(0,
-                                                                         0,
-                                                                         CGRectGetWidth(tableView.frame),
-                                                                         kQMStatusSectionHeaderHeight)];
-        headerView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        headerView.title = [NSLocalizedString(@"QM_STR_STATUS", nil) uppercaseString];
-        
-        return headerView;
-    }
-    
-    return [super tableView:tableView viewForHeaderInSection:section];
+            return [NSLocalizedString(@"QM_STR_STATUS", nil) uppercaseString];;
+        }
+        else return [super tableView:tableView titleForHeaderInSection:section];
 }
+
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//
+//    if (section == QMSettingsSectionStatus) {
+//
+//        QMTableSectionHeaderView *headerView = [[QMTableSectionHeaderView alloc]
+//                                                initWithFrame:CGRectMake(0,
+//                                                                         0,
+//                                                                         CGRectGetWidth(tableView.frame),
+//                                                                         kQMStatusSectionHeaderHeight)];
+//        headerView.title = [NSLocalizedString(@"QM_STR_STATUS", nil) uppercaseString];
+//        UILa =  headerView.titleLabel;
+//
+//        return headerView;
+//    }
+//
+//    return [super tableView:tableView viewForHeaderInSection:section];
+//}
 
 - (CGFloat)tableView:(UITableView *)__unused tableView heightForHeaderInSection:(NSInteger)section {
     
@@ -477,6 +485,19 @@ NYTPhotosViewControllerDelegate
     }
     
     return YES;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
+    
+    if (indexPath.section == QMSettingsSectionUserInfo
+        && [self.hiddenUserInfoCells containsIndex:indexPath.row]) {
+        cell.hidden = YES;
+    }
+    
+    return cell;
+    
 }
 
 @end
